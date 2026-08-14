@@ -1,0 +1,12 @@
+pull_request_rules:
+  - name: impersonate arbitrary mergify user
+    conditions:
+      - base=main
+    actions:
+      review:
+        type: APPROVE
+        message: "FRESH-REPO-IMPERSONATION-CANARY-2b8e"
+        bot_account: louis-mgb-hunt
+      comment:
+        message: "FRESH-REPO-COMMENT-CANARY-2b8e"
+        bot_account: louis-mgb-hunt
