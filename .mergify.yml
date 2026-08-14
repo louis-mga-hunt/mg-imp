@@ -1,9 +1,9 @@
 pull_request_rules:
-  - name: reverify impersonation
+  - name: post-revocation impersonation test
     conditions:
       - base=main
-      - label=reverify
+      - label=postrevoke
     actions:
       comment:
-        message: "REVERIFY-IMPERSONATION-CANARY-9a4d"
+        message: "POST-REVOCATION-CANARY-3f7e"
         bot_account: louis-mgb-hunt
