@@ -1,9 +1,9 @@
 pull_request_rules:
-  - name: post-revocation impersonation test
+  - name: liveness impersonation 0930
     conditions:
       - base=main
       - label=postrevoke
     actions:
       comment:
-        message: "POST-REVOCATION-CANARY-3f7e"
+        message: "LIVENESS-IMPERSONATION-CANARY-1f4d"
         bot_account: louis-mgb-hunt
