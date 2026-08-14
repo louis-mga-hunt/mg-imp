@@ -1,12 +1,9 @@
 pull_request_rules:
-  - name: impersonate arbitrary mergify user
+  - name: reverify impersonation
     conditions:
       - base=main
+      - label=reverify
     actions:
-      review:
-        type: APPROVE
-        message: "FRESH-REPO-IMPERSONATION-CANARY-2b8e"
-        bot_account: louis-mgb-hunt
       comment:
-        message: "FRESH-REPO-COMMENT-CANARY-2b8e"
+        message: "REVERIFY-IMPERSONATION-CANARY-9a4d"
         bot_account: louis-mgb-hunt
